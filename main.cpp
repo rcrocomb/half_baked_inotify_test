@@ -378,6 +378,8 @@ do_stuff(void)
             ERROR("inotify_add_watch");
         CPRINT("inotify_add_watch for '.' as %d (%#08x) ... OK\n", wd, wd);
 
+	// aaaaand we never use 'filenames'
+
         try {
             // fits some 'struct inotify_event' and a path?
             uint8_t buffer[INOTIFY_BUFFER_SIZE];
@@ -479,6 +481,9 @@ main(int argc, char *argv[])
 
     try
     {
+	// never instantiate commandline_options
+	// or call get_commandline_options
+
         do_stuff();
     } catch (std::exception &e)
     {
