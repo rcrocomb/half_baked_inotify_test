@@ -1,5 +1,5 @@
 # half_baked_inotify_test
-Working inotify-using code that does do a while lot (watches '.')
+Working inotify-using code that doesn't do a whole lot (watches '.')
 
     This one works more than another 'inotify' test I have, but it's not great.
     
